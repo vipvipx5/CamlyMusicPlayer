@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <LinearLayout 
+        android:id="@+id/Fullcontrol"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:background="@android:color/background_dark"
+        android:layout_alignParentBottom="true">
+    	<include layout="@layout/controls_full"/>       
+    </LinearLayout>
+
+    <RelativeLayout 
+        android:layout_above="@id/Fullcontrol"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    	
+        <ImageView 
+            android:id="@+id/ImageAlbum"
+	        android:layout_height="match_parent"
+	        android:layout_width="match_parent"
+	        android:scaleType="centerCrop"
+	        android:src="@drawable/earth"/>
+        
+        <SeekBar 
+            android:id="@+id/seekbar_player"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentBottom="true"/>
+        
+        <TextView 
+            android:id="@+id/lblTimePlaying"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_above="@id/seekbar_player"
+            android:layout_alignParentLeft="true"
+            android:text="00:00"/>
+        
+       	<TextView 
+            android:id="@+id/lblDuration"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_above="@id/seekbar_player"
+            android:layout_alignParentRight="true"
+            android:text="00:00"/>
+        
+       	<TextView 
+            android:id="@+id/lblTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_alignParentTop="true"
+            android:textSize="20sp"
+            android:text="Unknown"/>
+       	
+       	<TextView 
+            android:id="@+id/lblArtistAlbum"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_below="@id/lblTitle"
+            android:text="Unknown - Unknown"/>
+       	
+    </RelativeLayout>
+
+</RelativeLayout>

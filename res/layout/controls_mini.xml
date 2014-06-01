@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+	<ImageButton
+		android:id="@+id/btnPrevious"
+		android:layout_height="fill_parent"
+		android:layout_width="0px"
+		android:layout_weight="1"
+		android:background="@drawable/selectable_item_bg"
+		android:scaleType="fitCenter"
+		android:src="@drawable/ic_action_previous" />
+	<ImageButton
+		android:id="@+id/btnPlay_pause"
+		android:layout_height="fill_parent"
+		android:layout_width="0px"
+		android:layout_weight="1"
+		android:background="@drawable/selectable_item_bg"
+		android:scaleType="fitCenter"
+		android:src="@drawable/ic_action_play"/>
+	<ImageButton
+		android:id="@+id/btnNext"
+		android:layout_height="fill_parent"
+		android:layout_width="0px"
+		android:layout_weight="1"
+		android:background="@drawable/selectable_item_bg"
+		android:scaleType="fitCenter"
+		android:src="@drawable/ic_action_next"/>
+	
+</merge>

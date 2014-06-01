@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/notification"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <ImageView 
+        android:id="@+id/notificationAlbum"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentLeft="true"/>
+    
+   	<LinearLayout 
+   	    android:id="@+id/controlNO"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignParentBottom="true"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content">
+	    <include layout = "@layout/controls_mini" />
+    </LinearLayout>
+    
+   	<TextView 
+	    android:id="@+id/lblNotificationTitle"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_toRightOf="@id/notificationAlbum"
+	    style="@style/NotificationTitle"
+	    android:singleLine="true"/>
+   	
+	   	    	
+   	<TextView 
+	    android:id="@+id/lblNotificationAlbumArtist"
+	    android:layout_height="wrap_content"
+	    android:layout_width="match_parent"
+   	    android:layout_toRightOf="@id/notificationAlbum"
+    	android:layout_toLeftOf="@id/controlNO"
+    	android:layout_below="@id/lblNotificationTitle"
+	    android:singleLine="true"/>
+
+	
+</RelativeLayout>
